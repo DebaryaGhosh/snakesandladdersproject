@@ -24,8 +24,8 @@ name_2 = turtle.textinput(title="Enter Name", prompt="Enter name of player 2.")
 
 # initialisation of some objects :-----------------------------------
 die = Die()
-player_1 = Player(-229.0, -150.0, "green", name_1, 1) # the first player
-player_2 = Player(-226.0, -200.0, "blue", name_2, 2) # the second player
+player_1 = Player(-229.0, -150.0, name_1, 1) # the first player
+player_2 = Player(-226.0, -200.0, name_2, 2) # the second player
 comment_bar = Comment()
 # -------------------------------------------------------------------
 

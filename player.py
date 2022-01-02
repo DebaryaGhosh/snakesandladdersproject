@@ -7,14 +7,12 @@ turtle.addshape(counter_sprite_1)
 turtle.addshape(counter_sprite_2)
 
 class Player(Turtle):
-    def __init__(self, x_pos, y_pos, color, name, sprite):
+    def __init__(self, x_pos, y_pos, name, sprite):
         super().__init__()
         if sprite == 1:
             self.shape(counter_sprite_1)
         elif sprite == 2:
             self.shape(counter_sprite_2)
-        self.shape("circle")
-        self.color(color)
         self.penup()
         self.goto(x_pos, y_pos)
         self.location = 0
