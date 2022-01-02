@@ -2,7 +2,7 @@ from turtle import Turtle
 import turtle 
 
 counter_sprite_1 = "./graphic/counter_1.gif"
-counter_sprite_2 = "./graphic/counter_2/gif"
+counter_sprite_2 = "./graphic/counter_2.gif"
 turtle.addshape(counter_sprite_1)
 turtle.addshape(counter_sprite_2)
 
