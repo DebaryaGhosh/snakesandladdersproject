@@ -76,6 +76,7 @@ def change_current_player():
         current_player = player_1
 
 def move_process():
+    game_screen.onkey(None, 'space')
     global game_is_on 
     # current location of the player is set...
     current_location = current_player.location
@@ -132,6 +133,7 @@ def move_process():
     change_current_player()
     # prints the name of the current player
     comment_bar.print_turn(current_player)
+    game_screen.onkey(move_process, "space")
 
 # listens for user input
 game_screen.listen()
