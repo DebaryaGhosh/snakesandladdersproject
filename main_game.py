@@ -95,14 +95,12 @@ def move_process():
         # otherwise counter will move by the required amount
         else:
             move_piece(current_location, destination)
-            print("shit moved #1")
             time.sleep(2.5)
     # if player is NOT out from the first box yet,
     else:
         # if the number on dice is 1, then piece will move out
         if destination == 1:
             move_piece(current_location, destination)
-            print("shit moved #2")
             time.sleep(3)
             current_player.is_out = True
     
@@ -128,7 +126,6 @@ def move_process():
         game_is_on = False
         return
 
-    print(f"{current_player.name}'s location is {current_player.location}")
     # changes the current player after their turn
     change_current_player()
     # prints the name of the current player
@@ -138,13 +135,5 @@ def move_process():
 # listens for user input
 game_screen.listen()
 game_screen.onkey(move_process, "space")
-# -------------------------------------------------------------------------------
-# FIND COORDINATES ON SCREEN
-# def get_mouse_click_coor(x, y):
-#     turtle.onscreenclick(None)
-#     print(x, y)
-
-# turtle.onscreenclick(get_mouse_click_coor)
-# --------------------------------------------------------------------------------
 
 turtle.mainloop()
