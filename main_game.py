@@ -115,7 +115,7 @@ def move_process():
     elif current_player.location in ladder_data.ladders:
         # the destination is set to the top of the ladder
         destination = ladder_data.ladders[current_player.location]
-        # and the player is, hence, moved to te destination
+        # and the player is, hence, moved to the destination
         move_piece(current_location, destination, ladder=True)
 
     # if the player is on the last box (30, of index 29)...
